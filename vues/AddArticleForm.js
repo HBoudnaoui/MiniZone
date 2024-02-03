@@ -66,7 +66,7 @@ const ArticleForm = () => {
     const completeData = { ...article, sizes };
 
     try {
-      let response = await fetch("http://10.0.0.148:3000/addArticle", {
+      let response = await fetch("http://YourLocalHost:3000/addArticle", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

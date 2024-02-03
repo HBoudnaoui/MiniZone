@@ -56,7 +56,7 @@ function RegistrationScreen({ navigation }) {
         password,
       };
 
-      fetch("http://10.0.0.148:3000/register", {
+      fetch("http://YourLocalHost:3000/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

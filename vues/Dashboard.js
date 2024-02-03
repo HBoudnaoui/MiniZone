@@ -20,7 +20,7 @@ const Dashboard = () => {
   });
 
   useEffect(() => {
-    fetch("http://10.0.0.148:3000/totals")
+    fetch("http://YourLocalHost:3000/totals")
       .then((response) => response.json())
       .then((data) => {
         setTotals({

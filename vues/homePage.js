@@ -14,7 +14,7 @@ const HomePage = () => {
     const fetchArticles = async () => {
       try {
         const articleInstance = new Article();
-        let url = "http://10.0.0.148:3000/articles";
+        let url = "http://YourLocalHost:3000/articles";
         const params = [];
         if (searchTerm) {
           params.push(`search=${encodeURIComponent(searchTerm)}`);

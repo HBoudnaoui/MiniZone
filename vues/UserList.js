@@ -8,7 +8,7 @@ const UserList = () => {
 
   const fetchUserList = async () => {
     try {
-      const response = await fetch("http://10.0.0.148:3000/users");
+      const response = await fetch("http://YourLocalHost:3000/users");
 
       if (!response.ok) {
         if (response.status === 404) {

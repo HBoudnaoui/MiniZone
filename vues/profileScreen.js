@@ -68,7 +68,7 @@ const ProfileScreen = () => {
         adresse: fullAddress,
       };
       const response = await axios.post(
-        "http://10.0.0.148:3000/updateUser",
+        "http://YourLocalHost:3000/updateUser",
         updatedUserInfo
       );
 
@@ -93,7 +93,7 @@ const ProfileScreen = () => {
 
   const fetchCommandes = async () => {
     try {
-      const response = await fetch("http://10.0.0.148:3000/commandes", {
+      const response = await fetch("http://YourLocalHost:3000/commandes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

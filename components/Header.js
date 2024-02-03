@@ -30,7 +30,7 @@ const Header = () => {
     const fetchSectionsAndCategories = async () => {
       try {
         const response = await fetch(
-          "http://10.0.0.148:3000/sections-categories"
+          "http://YourLocalHost:3000/sections-categories"
         );
         if (response.ok) {
           const data = await response.json();
@@ -73,7 +73,7 @@ const Header = () => {
   };
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://10.0.0.148:3000/logout", {
+      const response = await fetch("http://YourLocalHost:3000/logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

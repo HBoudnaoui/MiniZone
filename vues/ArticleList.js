@@ -10,7 +10,7 @@ const ArticleList = () => {
 
   const fetchArticleList = async () => {
     try {
-      const response = await fetch("http://10.0.0.148:3000/articles");
+      const response = await fetch("http://YourLocalHost:3000/articles");
       if (!response.ok) {
         throw new Error(
           `Server returned ${response.status} ${response.statusText}`

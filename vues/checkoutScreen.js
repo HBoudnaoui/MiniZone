@@ -16,7 +16,7 @@ const CheckoutScreen = () => {
   const name = user.nom + " " + user.prenom;
   const dispatch = useDispatch();
   const navigation = useNavigation();
-  const API_URL = "http://10.0.0.148:3000";
+  const API_URL = "http://YourLocalHost:3000";
   const fetchPaymentSheetParams = async () => {
     try {
       const simplifiedCart = cart.map((item) => ({
